@@ -1,0 +1,305 @@
+/* Universal Styles */
+
+body {
+    font-family: "Raleway", sans-serif;
+  }
+  
+  
+  /* Navigation */
+  
+  nav {
+    background-color: #333;
+  }
+  
+  nav span {
+    display: inline-block;
+  }
+  
+  nav a {
+    color: #fff;
+    text-decoration: none; 
+    font-size: 1rem;
+  }
+  
+  nav a:hover {
+    color: orange;
+  }
+  
+  
+  /* Background Image Container */
+  
+  .bg-img-container {
+    background-image: url("http://s3.amazonaws.com/codecademy-content/projects/broadway/bg.jpg");
+    width: 100%;
+    background-size: cover;
+    position: relative;
+  }
+  
+  .bg-img-container h1 {
+    color: #333;
+    font-size: 3.5em;
+    display: inline;
+    text-align: center;
+    width: 100%;
+    position: absolute;
+  }
+  
+  .bg-img-container button {
+    background-color: #333;
+    color: #fff;
+    font-size: 1em;
+    text-align: center;
+    display: block;
+    width: 16.6%;
+    border: none;
+    outline: none;
+    position: absolute; 
+  }
+  
+  .bg-img-container button:hover {
+    color: #000;
+    background: #999;
+  }
+  
+  /* Category Container */
+  
+  .category {
+    text-align: center;
+  } 
+  
+  .category .item {
+    display: inline-block;
+  }
+  
+  .item h2 {
+    font-size: 1.8em;
+    margin-bottom: 0;
+  }
+  
+  .item p {
+    font-size: 0.9em;
+  }
+  
+  .item a {
+    font-size: 1em;
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .item a:hover {
+    color: #fff;
+    background: #333;
+  }
+  
+  /* Footer */
+  
+  footer {
+    background-color: #333;
+  }
+  
+  footer p {
+    color: #fff;
+    text-align: center;
+    font-size: 0.7em;
+  }
+  
+  
+  /* MADIA QUERIES */
+  
+  /* for desktops */
+  @media (min-width: 1024px) {
+    html {
+      font-size: 18px;
+    }
+    
+    nav {
+      padding: 25px 30px;
+    }
+    
+    nav span {
+      margin-left: 50px;
+    }
+    
+    .bg-img-container {
+      height: 650px;
+    }
+    
+    .bg-img-container h1 {
+      margin: 40px auto;
+    }
+    
+    .bg-img-container button {
+      padding: 15px; 
+      margin: 170px auto;
+    }
+    
+    .category {
+      margin-top: 100px;
+      margin-bottom: 140px;
+    }
+    
+    .category .item {
+      width: 180px;
+    }
+    
+    .category .item2 {
+      margin: 0 65px;
+    }
+    
+    .item img {
+      width: 30%; 
+      height: 50px;
+    }
+    
+    .item p {
+      margin-bottom: 30px; 
+    }
+    
+    .item a {
+      border: 3px solid #333;
+      padding: 10px;
+    }
+    
+    footer {
+      padding: 20px 0;
+    }
+  }
+  
+  
+  /* for tablets */
+  @media (min-width: 768px) and (max-width: 1023px) {
+    html {
+      font-size: 15px;
+    }
+    
+    nav {
+      padding: 15px 0;
+    }
+    
+    nav span {
+      box-sizing: border-box;
+      text-align: center;
+      width: 49.5%;
+      /* width: 50%; berganda ishlamayapti
+         lekin box-sizing: border-box; berganman
+         qoq ikkiga bo'lib berishi kerak edi */
+    }
+    
+    .span1, .span2 {
+      margin-bottom: 10px;
+    }
+    
+    .bg-img-container {
+      height: 450px;
+    }
+    
+    .bg-img-container h1 {
+      margin: 27px auto;
+    }
+    
+    .bg-img-container button {
+      width: 20%;
+      padding: 11px; 
+      margin: 140px auto;
+    }
+    
+    .category {
+      margin-top: 70px;
+      margin-bottom: 110px;
+    }
+    
+    .category .item {
+      width: 160px;
+    }
+    
+    .category .item2 {
+      margin: 0 50px;
+    }
+    
+    .item img {
+      width: 30%; 
+      height: 45px;
+    }
+    
+    .item p {
+      margin-bottom: 30px;  
+    }
+    
+    .item a {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    
+    footer {
+      padding: 15px 0;
+    }
+  }
+  
+  
+  /* for mobile phones */
+  @media (max-width: 767px) {
+    html {
+      font-size: 13px;
+    }
+    
+    nav {
+      padding: 7px 0;
+    }
+    
+    nav span {
+      box-sizing: border-box;
+      text-align: center;
+      width: 100%;
+    }
+    
+    nav .span1, nav .span2, nav .span3 {
+      margin-bottom: 5px;
+    }
+    
+    .bg-img-container {
+      height: 300px;
+    }
+    
+    .bg-img-container h1 {
+      font-size: 3.2em;
+      margin: 20px auto;
+    }
+    
+    .bg-img-container button {
+      width: 25%;
+      padding: 9px; 
+      margin: 125px auto;
+    }
+    
+    .category {
+      margin-top: 10px;
+      margin-bottom: 25px;
+    }
+    
+    .category .item {
+      width: 120px; 
+      margin: 50px 0;
+    }
+    
+    .category .item2 {
+      margin: 0 35px;
+    }
+    
+    .item img {
+      width: 30%; 
+      height: 40px;
+    }
+    
+    .item p {
+      margin-bottom: 30px; 
+    }
+    
+    .item a {
+      border: 2px solid #333;
+      padding: 10px;
+    }
+    
+    footer {
+      padding: 10px;
+    }
+  }
